@@ -1,0 +1,42 @@
+{
+  "name": "test-practice",
+  "version": "1.0.0",
+  "description": "various testing examples",
+  "main": "index.js",
+  "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./ --ext .js",
+    "lint-fix": "npm run lint -- --fix",
+    "start": "npm install && node app.js",
+    "test": "mocha **.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TBD"
+  },
+  "keywords": [
+    "tests",
+    "mocha",
+    "chai",
+    "sinon"
+  ],
+  "author": "Jon Clayton",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "chai": "^3.5.0",
+    "sinon": "^1.17.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^7.0.0",
+    "babel-polyfill": "^6.9.1",
+    "eslint": "^3.13.1",
+    "eslint-config-arundo": "3.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.1.1",
+    "sinon-chai": "^2.8.0"
+  }
+}
